@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from './Header/Header';
-import MasterForm from './MasterForm/MasterForm';
-// import Cart from './Cart';
+import Header from './Header';
+import MasterForm from './Form/MasterForm.jsx';
+import Cart from './Summary/Cart.jsx';
 import './App.css';
 
 class App extends Component {
@@ -49,6 +49,10 @@ class App extends Component {
         format={this.USCurrencyFormat.format} 
         selected={this.state.selected} 
         updateFeature={this.updateFeature} 
+        />
+        <Cart 
+        format={this.USCurrencyFormat.format} 
+        selected={this.state.selected}
         />
        
       </div>
