@@ -54,7 +54,6 @@ class App extends Component {
         format={this.USCurrencyFormat.format} 
         selected={this.state.selected}
         />
-       
       </div>
     );
   };
