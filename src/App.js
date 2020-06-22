@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './Header/Header';
-import MainForm from './MainForm/MainForm';
-import Cart from './Cart';
+import MasterForm from './MasterForm/MasterForm';
+// import Cart from './Cart';
 import './App.css';
 
 class App extends Component {
@@ -44,10 +44,13 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <main>
-          <MainForm features={this.props.features} format={this.USCurrencyFormat.format} selected={this.state.selected} updateFeature={this.updateFeature} />
-          <Cart format={this.USCurrencyFormat.format} selected={this.state.selected} />
-        </main>
+        <MasterForm 
+        features={this.props.features} 
+        format={this.USCurrencyFormat.format} 
+        selected={this.state.selected} 
+        updateFeature={this.updateFeature} 
+        />
+       
       </div>
     );
   };

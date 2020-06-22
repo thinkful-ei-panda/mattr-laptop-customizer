@@ -1,7 +1,7 @@
 import React from 'react';
 import Features from './Features';
 
-function MainForm(props) {
+function MasterForm(props) {
     return (
         <form className="main__form">
             <h2>Customize your laptop</h2>
@@ -15,4 +15,4 @@ function MainForm(props) {
     );
 };
 
-export default MainForm;
+export default MasterForm;
