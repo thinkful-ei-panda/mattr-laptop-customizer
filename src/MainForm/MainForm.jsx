@@ -1,28 +1,18 @@
-import React, { Component } from 'react';
-import App from './App';
-// import './SearchBar.css';
-// import SearchBox from '../SearchBox/SearchBox';
-// import FilterOptions from '../FilterOptions/FilterOptions';
+import React from 'react';
+import Features from './Features';
 
-class MainForm extends Component {
-    render() {
-      return (
-        <div key={itemHash} className="feature__item">
-          <input
-            type="radio"
-            id={itemHash}
-            className="feature__option"
-            name={slugify(feature)}
-            checked={item.name === this.state.selected[feature].name}
-            onChange={e => this.updateFeature(feature, item)}
-                />
-            <label htmlFor={itemHash} className="feature__label">
-              {item.name} ({USCurrencyFormat.format(item.cost)})
-            </label>
-        </div>
-      );
-    };
-    
-}
+function MainForm(props) {
+    return (
+        <form className="main__form">
+            <h2>Customize your laptop</h2>
+            <Features 
+            features={props.features} 
+            format={props.format} 
+            selected={props.selected} 
+            updateFeature={props.updateFeature} 
+            />
+        </form>
+    );
+};
 
 export default MainForm;

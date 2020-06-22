@@ -2,16 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './Header/Header';
 import MainForm from './MainForm/MainForm';
-// import FilterableList from './FilterableList/FilterableList';
-const USCurrencyFormat = new Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'USD'
-});
+import Cart from './Cart';
+import './App.css';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {selected: {
+  state = {
+    selected: {
       Processor: {
         name: '17th Generation Intel Core HB (7 Core with donut spare)',
         cost: 700
@@ -29,9 +25,8 @@ class App extends Component {
         cost: 1500
       }
     }
-    };
-  }
-
+  };
+  
   updateFeature = (feature, newValue) => {
     const selected = Object.assign({}, this.state.selected);
     selected[feature] = newValue;
@@ -40,15 +35,22 @@ class App extends Component {
     });
   };
 
+  USCurrencyFormat = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD'
+    });
+
   render() {
     return (
       <div className="App">
         <Header />
-        <MainForm />
-        
+        <main>
+          <MainForm features={this.props.features} format={this.USCurrencyFormat.format} selected={this.state.selected} updateFeature={this.updateFeature} />
+          <Cart format={this.USCurrencyFormat.format} selected={this.state.selected} />
+        </main>
       </div>
     );
-  }
-}
+  };
+};
 
 export default App;
