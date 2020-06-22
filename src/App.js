@@ -43,7 +43,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
+         <Header />
+        <main className="wrapper">
         <MasterForm 
         features={this.props.features} 
         format={this.USCurrencyFormat.format} 
@@ -54,6 +55,7 @@ class App extends Component {
         format={this.USCurrencyFormat.format} 
         selected={this.state.selected}
         />
+        </main>
       </div>
     );
   };
