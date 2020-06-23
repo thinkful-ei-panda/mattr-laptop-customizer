@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/mattr-laptop-customizer/static/css/main.72a41afd.chunk.css",
+    "main.js": "/mattr-laptop-customizer/static/js/main.9d5ae98d.chunk.js",
+    "main.js.map": "/mattr-laptop-customizer/static/js/main.9d5ae98d.chunk.js.map",
+    "runtime-main.js": "/mattr-laptop-customizer/static/js/runtime-main.2eedf45c.js",
+    "runtime-main.js.map": "/mattr-laptop-customizer/static/js/runtime-main.2eedf45c.js.map",
+    "static/js/2.0660a072.chunk.js": "/mattr-laptop-customizer/static/js/2.0660a072.chunk.js",
+    "static/js/2.0660a072.chunk.js.map": "/mattr-laptop-customizer/static/js/2.0660a072.chunk.js.map",
+    "index.html": "/mattr-laptop-customizer/index.html",
+    "precache-manifest.62f0f98fd0754528445c245cc519c5f8.js": "/mattr-laptop-customizer/precache-manifest.62f0f98fd0754528445c245cc519c5f8.js",
+    "service-worker.js": "/mattr-laptop-customizer/service-worker.js",
+    "static/css/main.72a41afd.chunk.css.map": "/mattr-laptop-customizer/static/css/main.72a41afd.chunk.css.map",
+    "static/js/2.0660a072.chunk.js.LICENSE.txt": "/mattr-laptop-customizer/static/js/2.0660a072.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2eedf45c.js",
+    "static/js/2.0660a072.chunk.js",
+    "static/css/main.72a41afd.chunk.css",
+    "static/js/main.9d5ae98d.chunk.js"
+  ]
+}
